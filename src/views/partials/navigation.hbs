@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #131339;">
+  <div class="container">
+    <a class="navbar-brand text-white" style="">POKEMÓN</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon "></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      {{!-- Si el usuario esta logeado se muestran estos inidices--}}
+      {{#if user}}
+      <li class="nav-item">
+        <a href="/pokemons" class="nav-link " >Ver Pokemones</a>
+      </li>
+      <li class="nav-item">
+        <a href="/logout" class="nav-link">Cerrar Sesion</a>
+      </li>
+      {{!-- De lo contrario muestra estos--}}
+      {{else}}
+      <li class="nav-item">
+        <a href="/pokemons" class="nav-link " >Ver Pokemones</a>
+      </li>
+      <li class="nav-item">
+        <a href="/signin" class="nav-link " >Iniciar Sesión</a>
+      </li>
+      <li class="nav-item">
+        <a href="/signup" class="nav-link ">Registrarse</a>
+      </li>
+      {{/if}}
+    </ul>
+  </div>
+  </div>
+</nav>

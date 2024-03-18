@@ -1,0 +1,26 @@
+
+<div class="inicio">
+<div class="container p-4">
+    <div class="row ">
+        <div class="col-md-4 mx-auto d-flex flex-column">
+            <div class="card text-center text-white " style="background-color: #131339; border-radius: 10px;">
+                <div class="card-header ">
+                    <a><h2 class="card-title text-white">
+                                {{pokemonName}}
+                            </h2></a>
+                            {{!--Imagen del pokemon--}}
+                            <img src="{{image}}"/>
+                            <h2>Habilidades:</h2>
+                            {{!--Se traen todas las habilidades que tenga el pokemon--}}
+                            {{#each abilityNames}}
+                            <h3 class="mx-1 ">{{name}}</h3>
+                            {{/each}}
+                 </div>
+            </div>
+                            <a href="/pokemons" class="btn btn-primary text-cetner mx-auto mt-4">
+                            Ver pokemones
+                            </a>
+        </div>
+    </div>
+</div>
+</div>

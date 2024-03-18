@@ -1,0 +1,16 @@
+<div class="container p-4">
+    <div class="row">
+        {{!--Por cada pokemon se crea un div con el nombre del pokemon y link para ver características del pokemón--}}
+        {{#each pokemonlist}}
+            <div class = "col-md-3 mb-2 mt-2">
+                <div class = "card text-center" style="background-color: #131339; border-radius: 10px">
+                    <a href="pokemons/{{name}}">
+                        <div class="card-body">
+                            <h3 class="card-title text-white">{{name}}</h3>    
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
